@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/productCart.css">
+        <link rel="stylesheet" href="css/productDetail.css">
+    </head>
+    <body>
+        <header>
+    
+            <div class="top-header">
+    
+                <nav id="menu">
+                    <div class="burger-menu">
+                        <ul>
+                            <li>
+                                <i class="fa fa-bars burger"></i>
+                            
+                            <ul>
+                                <li>
+                                    <div class="form" action="#" method="GET">
+                                    <div class="input">Buscar</div>
+                                    <div class="submit"><i class="fa fa-search"></i></div>
+                                    </div>
+                                </li>
+                                <li><a href="#">Productos</a></li>
+                                <li><a href="#">Tabla de talles</a></li>
+                                <li><a href="#">Contacto</a></li>
+                                <li><a href="#">Preguntas frecuentes</a></li>
+                                <li><a href="#">Cambios y devoluciones</a></li>
+                                <i class="fas fa-user-circle"></i>
+                                <li><a href="/registro">Crear Cuenta</a></li>
+                                <li><a href="/ingresar">Iniciar sesión </a></li>
+                            </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+    
+                <div class="logo"> 
+                    <a href="/"><img src="images/x-3d.png" alt="Logo de x-person"><p>Person</p></a>
+                </div>
+                
+                <div class="car">
+                    <a href="/carrito-de-compras"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+    
+    
+        </header>
+
+    <main class="product-detail">
+    <section class="container">
+            <div class="columna">
+                <img src="/images/productos/remeras/remera0.jpg" id= "ProductImg" alt="REMERA THE NEW OLD SCHOOL [ PIRANHA N2 BLANCO ]" width="100%">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="/images/productos/remeras/remera0.jpg" alt="REMERA THE NEW OLD SCHOOL [ PIRANHA N2 BLANCO ]" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img">
+                        <img src="/images/productos/remeras/remera1.jpg" alt="REMERA THE NEW OLD SCHOOL [ PIRANHA N2 MALTINTO ]" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img">
+                        <img src="/images/productos/remeras/remera2.jpg" alt="REMERA THE NEW OLD SCHOOL [ PIRANHA N2 MENTA ]" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img">
+                        <img src="/images/productos/remeras/remera3.jpg" alt="REMERA THE NEW OLD SCHOOL [ PIRANHA N2 NEGRO ]" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="columna">
+                <h2>T-shirts</h2>
+                <h2> $precio</h2>
+                <form action="/" method="post">
+                    <div class="elec-talle-color">
+                        <div class="elec-talle">
+                        <label for="prod-talle">Talle:</label>
+                            <select name="prod-talle" id="prod-talle">
+                                <option value="s" selected>  S </option>
+                                <option value="m">  M </option>
+                                <option value="l">  L </option>
+                                <option value="xl"> XL </option>
+                            </select>
+                        </div>
+                        <div class="elec-color">
+                        <label for="prod-color">Color:</label>
+                            <select name="prod-color" id="prod-color">
+                                <option value="#ffffff"selected>blanco</option>
+                                <option value="#696e6c">gris</option>
+                                <option value="#18c97a">verde</option>
+                                <option value="#000000">negro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="cant-elec">
+                        <label for="cantidad">Cantidad:</label>
+                        <div class="button-cant-elec">
+                        <input class="menos" type="button" value= "-"><input class="cant-prod" type="number" placeholder="1"><input class ="mas" type="button" value="+">
+                        </div>
+                    </div>
+                        <button type="submit">Agregar al carrito</button>
+                </form>
+                <h3 class="desc-prod">Detalles del productos</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia culpa aliquam perspiciatis eaque quibusdam, hic distinctio error perferendis doloribus ab, nisi deserunt velit minima enim. Officiis laboriosam vero ullam autem?</p>
+            </div>
+    </section>
+    <h3>TAMBIÉN TE PUEDE INTERESAR</h3>
+        <section class="sec-carrousel">
+                <i class="fas fa-arrow-left"></i>
+                <article class="product">
+                    <img src="/images/productos/accesorios/billetera-colgante-tigre.jpg" alt="billetera-colgante-tigre">
+                    <div class="product-description">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p class="product_name">nombre producto</p>
+                            <p class="price">precio</p>
+                            <p class="cuotas">6 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </article>
+
+                    <article class="product">
+                        <img src="/images/productos/accesorios/billetera-collar-azul.jpg" alt="billetera-collar-azul">
+                        <div class="product-description">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p class="product_name">nombre producto</p>
+                            <p class="price">precio</p>
+                            <p class="cuotas">6 CUOTAS SIN INTERÉS</p>
+                        </div>
+                        </article>
+
+                    <article class="product">
+                        <img src="/images/productos/accesorios/tapaboca-trady-blanco.jpg" alt="tapaboca-trady-blanco">
+                        <div class="product-description">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p class="product_name">nombre producto</p>
+                            <p class="price">precio</p>
+                            <p class="cuotas">6 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </article>
+
+                    <article class="product">
+                        <img src="/images/productos/accesorios/billetera-colgante-tigre.jpg" alt="billetera-colgante-tigre">
+                        <div class="product-description">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p class="product_name">nombre producto</p>
+                            <p class="price">precio</p>
+                            <p class="cuotas">6 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </article>
+
+                    <article class="product">
+                        <img src="/images/productos/accesorios/billetera-collar-azul.jpg" alt="billetera-collar-azul">
+                        <div class="product-description">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p class="product_name">nombre producto</p>
+                            <p class="price">precio</p>
+                            <p class="cuotas">6 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </article>
+
+                    <article class="product">
+                        <img src="/images/productos/accesorios/tapaboca-trady-blanco.jpg" alt="tapaboca-trady-blanco">
+                        <div class="product-description">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p class="product_name">nombre producto</p>
+                            <p class="price">precio</p>
+                            <p class="cuotas">6 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </article>
+                    <i  id ="i-carrousel" class="fas fa-arrow-right"></i>
+            </section>
+            <section class="ver-mas">
+                <p>Ver más productos</p>
+                <button type="submit"><i class="fas fa-arrow-down"></i></button>
+            </section>
+    </main>
+
+    <footer>
+        <div class="futer">
+            <section class="data-fiscal">
+                <img src="images/data-fiscal.jpg" alt="Data fiscal">
+            </section>
+            <section class="social-medias">
+                <article>
+                    <i class="fab fa-facebook"></i>
+                    <p> Facebook</p>
+                </article>
+                <article>
+                    <i class="fab fa-instagram"></i>
+                    <p> Instagram</p>
+                </article>
+                <article>
+                    <i class="fab fa-whatsapp"></i>
+                    <p> Whatsapp</p>
+                </article>
+
+            </section>
+            <section class="atencion-cliente">
+                <p>Quienes somos</p>
+                <p>Contacto</p>
+                <p>Atención al cliente</p>
+                <p>Término y condiciones</p>
+            </section>
+        </div>
+        <p>© Copyright Indefined - 2021</p>
+
+
+    </footer>
+</body>
+</html>

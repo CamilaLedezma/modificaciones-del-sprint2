@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+a{
+    font-weight: bolder;
+    color: black;
+
+}
+
+body{
+    margin: 0px auto;
+    font-family: Open Sans;
+}
+header .top-header .car{
+    opacity: 0%;
+}
+
+
+.titulos{
+    text-align: center;
+    
+    font-family: Bebas neue;
+    
+    margin: 10px 0px;
+    text-transform: uppercase;
+    font-weight:bolder;
+}
+
+
+.forms{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10vw;
+    text-align: left;
+    background-color: rgba(230, 40, 11, 0.65);
+    padding: 2em;
+    
+    
+    
+    }
+    
+
+
+.carrousel{
+    display: none;
+}
+
+label{
+        text-align: center;
+        
+        font-family: Bebas neue;
+        
+        margin-right: 50%;
+        
+    }
+
+input {
+    border: 2px solid gray;
+    margin-left: 2rem;
+    padding-left: 1rem;
+}
+
+.a-login{
+    
+        
+    font-family: Bebas neue;
+    
+    padding-left: 2em;
+    
+}
+footer section{
+
+}
+
+@media (min-width: 700px){
+    section.forms{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    section.forms .carrousel{
+        display: flex;
+        flex-grow: 1;
+    }
+    section.forms .carrousel img{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+@media (min-width: 1000px){
+    form{
+        position: absolute;
+        display: inline-block;
+        width: 30%;
+        left: 10%;
+    }
+    
+    .carrousel{
+        display: inline-block;
+        position: relative;
+        padding-left: 3em;
+}
+    .carrousel img{
+        position: relative;
+        left: 50%;
+        width: 90%;
+    }
+
+}

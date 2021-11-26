@@ -1,0 +1,387 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+body{
+    margin: 0px auto;
+    font-family: Open Sans;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-color: black;
+}
+header .top-header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+header #menu{
+    width: 20%;
+    position: relative;
+    left:10px;
+}
+header #menu .burger-menu{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+    color: white;
+}
+#menu ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400;
+    font-size:15px;
+    padding:10px;
+}
+#menu ul li {
+    position:relative;
+    list-style: none;
+}
+
+#menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0px;
+    background-color:black;
+    padding:0;
+}
+#menu ul li:hover > ul {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 150px;
+}
+header .top-header .logo {
+    display: flex;
+    padding:5px;
+    text-align: center;
+    width: 60%;
+    justify-content: center;
+}
+header .top-header .logo p{
+    display: none;
+}
+header .top-header .logo img{
+    width: 20%;
+    height: auto;
+    align-content: center;
+}
+header .top-header .form {
+    display: none;
+}
+header .top-header .car{
+    width: 20%;
+    text-align: center;
+    padding: 5px;
+}
+header .top-header .car i{
+    color:white
+}
+main.index{
+    margin: 0 auto;
+    width: 90%;
+}
+main.index section.sec-banner{
+    display: flex;
+    flex-wrap:nowrap;
+    width: 100%;
+    padding:20px 10px;
+    
+}
+main.index section.sec-banner i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    padding: 10px;
+    color: black;
+}
+main.index section.sec-banner img{
+    width: 90%;
+    height: auto;
+}
+main.index .sec-categorys{
+    padding: 15px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+main.index .sec-categorys article{
+    margin: 1px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    background-size: cover;
+    text-align: center;
+    border: solid 1px black;
+}
+main.index .sec-categorys  h4{
+    letter-spacing: 3px;
+    padding: 5px;
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    color:white;
+    text-transform: uppercase;
+}
+main.index .sec-categorys .remeras{
+    background-image:url('/images/categorias/cate-1.JPG');
+}
+main.index .sec-categorys .pantalones{
+    background-image:url('/images/categorias/cate-3.jpg');
+}
+main.index .sec-categorys .abrigos{
+    background-image:url('/images/categorias/cate-2.jpg');
+}
+main.index .sec-categorys .accesorios{
+    background-image:url('/images/categorias/cate-4.jpg');
+}
+main.index h3{
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+main.index section.sec-carrousel i.fas.fa-arrow-left, 
+main.index section.sec-carrousel i.fas.fa-arrow-right{
+    display: none;
+}
+main.index section.sec-carrousel{
+    padding: 10px 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+main.index section.sec-carrousel article.product{
+    border: 1px solid black;
+    width: 100%;
+    margin: 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+main.index section.sec-carrousel article.product img{
+    width: 100%;
+    height: auto;
+}
+main.index section.sec-carrousel article.product .product-description{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid black;
+}
+main.index section.sec-carrousel  article.product i{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.82);
+    font-size:16px;
+    position: absolute;
+    top: -80px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+}
+main.index section.sec-carrousel article.product p.cuotas{
+    font-size: 12px;
+}
+main.index section.ver-mas{
+    display: none;
+}
+main.index section.ver-mas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:10px;
+    font-family: sans-serif;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+main.index section.ver-mas button{
+    border: none;
+    border-radius: 15px;
+    color:black;
+    width: 15%;
+    height: 30px;
+    font-size: 24px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 15px 10px;
+    font-size: 10px;
+}
+footer .futer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+footer .futer .data-fiscal{
+    width: 20%;
+    height: auto;
+    padding: 10px;
+}
+footer .futer .data-fiscal img{
+    width: 100%;
+    height: auto;
+}
+footer .futer section.social-medias{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+footer .futer section.social-medias article{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    
+}
+footer .futer section.atencion-cliente{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 35%;
+    justify-content: center;
+    margin: 5px;
+    align-items: flex-end;
+}
+footer p{
+    text-align: center;
+}
+
+
+
+@media( min-width:361px){
+    header .top-header{
+        font-size: 24px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    header .top-header .logo {
+        display: flex;
+        padding:5px;
+        text-align: center;
+        width: 80%;
+        justify-content: center;
+    }
+    header .top-header .logo p{
+        display: block;
+        color: white;
+        font-size: 24px;
+        font-family: Bebas neue;
+        letter-spacing: 2px;
+    }
+    header .top-header .form {
+        display: flex;
+        flex-wrap: wrap;
+        border: solid 1.5px black;
+        border-radius: 15px;
+        background-color: white;
+        padding: 5px; 
+        width: 45%;
+    }
+    header .top-header .form .input{
+        width: 80%;
+        font-size: 12px;
+    }
+    header .top-header .form .submit{
+        width: 20%;
+        text-align: center;
+    }
+    main.index .sec-categorys article{
+        width: 48%;
+    }
+    main.index section.sec-carrousel article.product{
+        width: 48%;
+    }
+    main.index .sec-categorys article:hover{
+        border: #ff523b 1px solid;;
+    }
+    main.index .sec-categorys article:hover h4{
+        background-color: #ff523b;
+    }
+    footer p, footer i{
+        font-size: 12px;
+    }
+    footer .futer section.social-medias{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+}
+@media(min-width:769px){
+    header .top-header{
+        font-size: 30px;
+    }
+    header .top-header .logo {
+        display: flex;
+        padding:5px;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+    }
+    header .top-header .logo a{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;    
+    }
+    header .top-header .logo p{
+        display: block;
+        color: white;
+        font-size: 30px;
+        font-family: Bebas neue;
+        letter-spacing: 5px;
+    }
+    main.index .sec-categorys article{
+        width: 24%;
+        height: 200px;
+    }
+    main.index section.sec-carrousel{
+        padding: 10px 5px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    main.index section.sec-carrousel i.fas.fa-arrow-left, 
+    main.index section.sec-carrousel i.fas.fa-arrow-right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main.index section.sec-carrousel article.product{
+        width: 24%;
+        transition: height 4s;
+    }
+    main.index section.sec-carrousel article.product:hover{
+        height: 30%;
+        transition-duration: 450ms;
+    }
+    main.index section.sec-carrousel article.product:hover i{
+        color: #ff523b;
+        border: 1px solid #ff523b;
+        transition-duration: 450ms;
+    }
+    main.index section.ver-mas{
+        display: none;
+    }
+    footer p,
+    footer i{
+        font-size: 18px;
+    }
+    
+}
