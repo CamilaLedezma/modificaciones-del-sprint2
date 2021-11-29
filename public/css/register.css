@@ -1,113 +1,107 @@
-*{
-    margin: 0px;
-    padding: 0px;    
-    box-sizing: border-box;
-}
-a{
+
+main.register a{
     font-weight: bolder;
     color: black;
-
 }
-
-body{
-    margin: 0px auto;
-    font-family: Open Sans;
-}
-header .top-header .car{
-    opacity: 0%;
-}
-
-
-.titulos{
+main.register .titulos{
     text-align: center;
-    
     font-family: Bebas neue;
-    
-    margin: 10px 0px;
+    margin: 20px 0px;
     text-transform: uppercase;
     font-weight:bolder;
 }
-
-
-.forms{
+main.register section.forms{
     display: flex;
-    flex-wrap: wrap;
-    padding-left: 10vw;
-    text-align: left;
+    flex-wrap: nowrap;
     background-color: rgba(230, 40, 11, 0.65);
-    padding: 2em;
-    
-    
-    
-    }
-    
-
-
-.carrousel{
+    padding: 10px;
+    justify-content: center;
+}
+main.register section.forms input{
+    display: flex;
+    width: 100%;
+}
+main.register section.forms .submit{
+    display: block;
+    padding: 20px;
+    width: 100%;
+}
+main.register section.forms .submit label{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+main.register section.forms .submit button{
+    border:1px solid white;
+    height: 30px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    border-radius: 15px;
+}
+main.register section.forms .carrousel{
     display: none;
 }
-
-label{
-        text-align: center;
-        
-        font-family: Bebas neue;
-        
-        margin-right: 50%;
-        
-    }
-
-input {
-    border: 2px solid gray;
-    margin-left: 2rem;
-    padding-left: 1rem;
+main.register input {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-left: 0 auto;
 }
-
-.a-login{
-    
-        
+main.register .a-login{
+    margin: 30px 10px;
+    display: flex;
+    justify-content: center;
     font-family: Bebas neue;
-    
-    padding-left: 2em;
-    
-}
-footer section{
-
 }
 
-@media (min-width: 700px){
-    section.forms{
+@media (min-width: 361px){
+    main.register{
+        width: 80%;
+        margin: 0px auto;
+    }
+    main.register section.forms form,
+    main.register section.forms form{
+        margin:5px;
+    }
+    main.register section.forms form{
+        width: 40%;
+        justify-content: center;
         display: flex;
         flex-wrap: nowrap;
+        align-items: center;
+        flex-direction: column;
     }
-    section.forms .carrousel{
+   
+    main.register section.forms .submit{
+        display:flex;
+        justify-content: center;
+    }
+    main.register section.forms .submit label{
         display: flex;
-        flex-grow: 1;
+        justify-content: center;
+        text-align: center;
+        width: 60%;
+    }
+    main.register section.forms .carrousel{
+        display: flex;
+        width: 60%;
+        align-items: center;
+        justify-content: flex-end;
     }
     section.forms .carrousel img{
         width: 100%;
         height: auto;
     }
-
+    main.register section.forms,main.register section.a-login{
+        font-size: 16px;
+    }
 }
 
 
-@media (min-width: 1000px){
-    form{
-        position: absolute;
-        display: inline-block;
-        width: 30%;
-        left: 10%;
+@media (min-width: 769px){
+    main.register section.forms,main.register section.a-login{
+        font-size: 20px;
     }
     
-    .carrousel{
-        display: inline-block;
-        position: relative;
-        padding-left: 3em;
-}
-    .carrousel img{
-        position: relative;
-        left: 50%;
-        width: 90%;
-    }
-
 }

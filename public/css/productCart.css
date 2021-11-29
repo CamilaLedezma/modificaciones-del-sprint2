@@ -1,8 +1,4 @@
-*{
-    margin: 0px;
-    padding: 0px;    
-    box-sizing: border-box;
-}
+
 header .top-header .car{
     opacity: 0%;
 }
@@ -62,11 +58,11 @@ main.product-cart .prod-tabla th.pro-desc .cant-elec{
     justify-content: space-around;
     width: 100%;
     border-radius: 10px;
-    background-color:#bfbcbb;
+    background-color:#ff523b;
 }
 main.product-cart section.prod-tabla .pro-desc .cant-elec input.menos, 
 main.product-cart section.prod-tabla .pro-desc .cant-elec input.mas{
-    background-color: #bfbcbb;
+    background-color: #ff523b;
     border:none;
     font-size: 19px;
 }
@@ -76,7 +72,7 @@ main.product-cart .prod-tabla th.icon .eliminar{
 main.product-cart article.medios-envio, section.resumen-compra{
     margin:20px 0px;
     padding: 20px 10px;
-    background-color: rgba(0, 0, 0, 0.48);
+    background-color: white;
     border-radius: 3px;
     width: 100%;
     text-align: center;
@@ -135,6 +131,10 @@ main.product-cart section.ver-mas{
     display: none;
 }
 @media(min-width:361px){
+    main.product-cart  {
+        width: 80%;
+        margin: 0px auto;
+    }
     main.product-cart .agrup-tabla-envio{
         display: flex;
         flex-wrap: wrap;
@@ -151,6 +151,12 @@ main.product-cart section.ver-mas{
     main.product-cart section.sec-carrousel i.fas.fa-arrow-left, 
     main.product-cart section.sec-carrousel i.fas.fa-arrow-right{
         display: none;
+    }
+    main.product-cart h3{
+        display: block;
+        padding: 10px;
+        text-align: center;
+        font-weight: bolder;
     }
     main.product-cart section.sec-carrousel{
         padding: 10px 5px;
@@ -229,6 +235,7 @@ main.product-cart section.ver-mas{
         border: 1px solid #ff523b;
         color:#ff523b;
     }
+    
 @media(min-width:769px){
     
     main.product-cart .agrup-tabla-envio section.prod-tabla,

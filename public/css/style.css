@@ -21,8 +21,6 @@ header .top-header{
 }
 header #menu{
     width: 20%;
-    position: relative;
-    left:10px;
 }
 header #menu .burger-menu{
     width: 100%;
@@ -43,8 +41,30 @@ header #menu .burger-menu{
 #menu ul li {
     position:relative;
     list-style: none;
+    width: 100%;
 }
-
+#menu ul li .form-serch-desplegable form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 20px;
+}
+#menu ul li .form-serch-desplegable input{
+    width: 80%;
+    border:none;
+    border-radius: 5px;
+}
+#menu ul li .form-serch-desplegable button{
+    width: 20%;
+    border:none;
+    border-radius: 5px;
+}
+#menu ul li .icon-li{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
 #menu ul ul {
     display:none;
     position:absolute;
@@ -61,6 +81,9 @@ header #menu .burger-menu{
     padding: 5px;
     width: 150px;
 }
+header{
+    margin: 0px auto;
+}
 header .top-header .logo {
     display: flex;
     padding:5px;
@@ -68,7 +91,9 @@ header .top-header .logo {
     width: 60%;
     justify-content: center;
 }
-header .top-header .logo p{
+header .top-header .logo p,
+header .top-header .form-serch-header,
+header .top-header .user{
     display: none;
 }
 header .top-header .logo img{
@@ -76,11 +101,8 @@ header .top-header .logo img{
     height: auto;
     align-content: center;
 }
-header .top-header .form {
-    display: none;
-}
 header .top-header .car{
-    width: 20%;
+    width: 15%;
     text-align: center;
     padding: 5px;
 }
@@ -151,6 +173,8 @@ main.index h3{
     padding: 10px;
     text-align: center;
     font-weight: bolder;
+    letter-spacing: 5px;
+
 }
 
 main.index section.sec-carrousel i.fas.fa-arrow-left, 
@@ -227,51 +251,84 @@ footer{
 footer .futer{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-}
-footer .futer .data-fiscal{
-    width: 20%;
-    height: auto;
-    padding: 10px;
-}
-footer .futer .data-fiscal img{
+    align-items: flex-start;
     width: 100%;
-    height: auto;
-}
-footer .futer section.social-medias{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    width: 40%;
     justify-content: center;
-    align-items: center;
 }
-footer .futer section.social-medias article{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5px;
+footer .futer h5{
+    font-family: 'Bebas neue';
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+footer .futer p{
+    font-size: 10px;
+    font-family: Open Sans ;
+}
+footer .futer section.products-footer{
+    padding: 10px;
     
 }
-footer .futer section.atencion-cliente{
+footer .futer section.social-medias{
+    padding: 10px;
+    
+}
+footer .futer section.social-medias .social-links{
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    width: 35%;
-    justify-content: center;
-    margin: 5px;
-    align-items: flex-end;
+    align-items: center;
 }
-footer p{
+footer .futer section.contact-footer{
+    padding: 10px;
+}
+footer .futer section.contact-footer .contact-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer section.copy-right{
     text-align: center;
 }
 
-
-
 @media( min-width:361px){
+    main.index  {
+        width: 80%;
+        margin: 0px auto;
+    }
     header .top-header{
         font-size: 24px;
         display: flex;
         flex-wrap: nowrap;
+    }
+    #menu ul li .form-serch-desplegable,
+    #menu ul li .user-cont{
+        display: none;
+    }
+    header .top-header .form-serch-header{
+        display: flex;
+        width: 40%;
+    }
+    header .top-header .user{
+        display: flex;
+        width: 15%;
+        justify-content: center;
+    }
+    header .top-header .form-serch-header form{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        height: 30px;
+    }
+    header .top-header .form-serch-header input{
+        width: 80%;
+        border:none;
+        border-radius: 5px;
+    }
+    header .top-header .form-serch-header button{
+        width: 20%;
+        border:none;
+        border-radius: 5px;
     }
     header .top-header .logo {
         display: flex;
@@ -287,23 +344,6 @@ footer p{
         font-family: Bebas neue;
         letter-spacing: 2px;
     }
-    header .top-header .form {
-        display: flex;
-        flex-wrap: wrap;
-        border: solid 1.5px black;
-        border-radius: 15px;
-        background-color: white;
-        padding: 5px; 
-        width: 45%;
-    }
-    header .top-header .form .input{
-        width: 80%;
-        font-size: 12px;
-    }
-    header .top-header .form .submit{
-        width: 20%;
-        text-align: center;
-    }
     main.index .sec-categorys article{
         width: 48%;
     }
@@ -316,12 +356,14 @@ footer p{
     main.index .sec-categorys article:hover h4{
         background-color: #ff523b;
     }
-    footer p, footer i{
-        font-size: 12px;
+    footer .futer p, footer .futer i,footer .futer a{
+        font-size: 14px;
     }
-    footer .futer section.social-medias{
+    footer .futer section.social-medias .social-links{
+        display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: space-around;
+        font-size: 20px;
     }
 
 }
@@ -379,9 +421,24 @@ footer p{
     main.index section.ver-mas{
         display: none;
     }
-    footer p,
-    footer i{
+    footer .futer h5{
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    footer .futer p,
+    footer .futer i{
         font-size: 18px;
     }
-    
+    footer .futer section.social-medias{
+        width: 30%;
+        text-align: center;
+    }
+    footer .futer section.social-medias .social-links{
+        display: flex;
+        padding-top: 20px;
+        justify-content: space-around;
+    }
+    footer .futer section.social-medias .social-links i{
+        font-size: 30px;
+    }
 }

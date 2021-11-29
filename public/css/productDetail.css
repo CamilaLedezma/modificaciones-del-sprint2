@@ -45,15 +45,16 @@ main.product-detail section.container .columna form{
 }
 main.product-detail section.container .columna form .elec-talle-color{
     display: flex;
-    flex-wrap: nowrap;
     text-align: center;
-    justify-content: space-around;
     width: 100%;
     padding: 5px;
 }
 main.product-detail section.container .columna form .elec-talle-color .elec-talle,
 main.product-detail section.container .columna form .elec-talle-color .elec-color{
     width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 main.product-detail section.container .columna form .cant-elec{
     display: flex;
@@ -159,6 +160,10 @@ main.product-detail section.ver-mas button{
     font-size: 24px;
 }
 @media(min-width:361px){
+    main.product-detail  {
+        width: 80%;
+        margin: 0px auto;
+    }
     main.product-detail section.sec-carrousel article.product{
         width: 48%;
     }

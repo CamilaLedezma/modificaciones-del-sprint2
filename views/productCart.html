@@ -12,20 +12,18 @@
 </head>
 <body>
     <header>
-
         <div class="top-header">
-
             <nav id="menu">
                 <div class="burger-menu">
                     <ul>
                         <li>
                             <i class="fa fa-bars burger"></i>
-                        
                         <ul>
                             <li>
-                                <div class="form" action="#" method="GET">
-                                <div class="input">Buscar</div>
-                                <div class="submit"><i class="fa fa-search"></i></div>
+                                <div class="form-serch-desplegable">
+                                    <form action="/" method="get">
+                                        <input type="text" value="" placeholder="Buscar"><button type="submit"><i class="fas fa-search"></i></button>
+                                    </form>
                                 </div>
                             </li>
                             <li><a href="#">Productos</a></li>
@@ -33,25 +31,31 @@
                             <li><a href="#">Contacto</a></li>
                             <li><a href="#">Preguntas frecuentes</a></li>
                             <li><a href="#">Cambios y devoluciones</a></li>
-                            <i class="fas fa-user-circle"></i>
+                            <div class="user-cont">
+                            <li class="icon-li"><i class="fas fa-user-circle"></i></li>
                             <li><a href="/registro">Crear Cuenta</a></li>
                             <li><a href="/ingresar">Iniciar sesión </a></li>
+                            </div>
                         </ul>
                         </li>
                     </ul>
                 </div>
             </nav>
-
             <div class="logo"> 
                 <a href="/"><img src="images/x-3d.png" alt="Logo de x-person"><p>Person</p></a>
             </div>
-
+            <div class="form-serch-header">
+                <form action="/" method="get">
+                    <input type="text" value="" placeholder="Buscar"><button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="user">
+            <a href="/ingresar"><i class="far fa-user"></i></a>
+            </div>
             <div class="car">
                 <a href="/carrito-de-compras"><i class="fas fa-shopping-cart"></i></a>
-            </div>
+            </div> 
         </div>
-
-
     </header>
 
     <main class="product-cart">
@@ -136,6 +140,7 @@
             <a href="#">Ver más productos</a>
         </section>
         </div>
+        
         <h3>PRODUCTOS DESTACADOS</h3>
         <section class="sec-carrousel">
                     <i class="fas fa-arrow-left"></i>
@@ -210,33 +215,38 @@
 
     <footer>
         <div class="futer">
-            <section class="data-fiscal">
-                <img src="images/data-fiscal.jpg" alt="Data fiscal">
+            <section class="products-footer">
+                <h5>Productos</h5>
+                <div class="product-list">
+                    <p>Remeras</p>
+                    <p>Pantalones</p>
+                    <p>Abrigos</p>
+                    <p>Accesorios</p>
+                </div>
             </section>
             <section class="social-medias">
-                <article>
-                    <i class="fab fa-facebook"></i>
-                    <p> Facebook</p>
-                </article>
-                <article>
-                    <i class="fab fa-instagram"></i>
-                    <p> Instagram</p>
-                </article>
-                <article>
-                    <i class="fab fa-whatsapp"></i>
-                    <p> Whatsapp</p>
-                </article>
-
+                <h5>Seguinos</h5>
+                <div class="social-links">
+                    <div><a href="#"><i class="fab fa-facebook"></i></a></div>
+                    <div><a href="#"><i class="fab fa-instagram"></i></a></div>
+                    <div><a href="#"><i class="fab fa-whatsapp"></i></a></div>
+                </div>
             </section>
-            <section class="atencion-cliente">
-                <p>Quienes somos</p>
-                <p>Contacto</p>
-                <p>Atención al cliente</p>
-                <p>Término y condiciones</p>
+            <section class="contact-footer">
+                <h5>Contactanos</h5>
+                <div class="contact-links">
+                    <div><i class="far fa-envelope"></i><a href="#"> xperson@indefined.com</a></div>
+                    <div><i class="fab fa-whatsapp"></i><a href="#"> +54 (011) 2222-4444</a></div>
+                    <div><i class="fas fa-map-marker-alt"></i><a href="#"> CABA - Argentina</a></div>
+                
+                
+                
+            </div>
             </section>
         </div>
-        <p>© Copyright Indefined - 2021</p>
-
+        <section class="copy-right">
+            <p>© Copyright Indefined - 2021</p>
+        </section>
 
     </footer>
 </body>
