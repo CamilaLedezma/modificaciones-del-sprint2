@@ -8,8 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/productCart.css">
-        <link rel="stylesheet" href="/public/css/productDetail.css">
+        <title>X-Person | Detalle</title>
     </head>
     <body>
         <header>
@@ -61,27 +60,27 @@
 
     <main class="product-detail">
     <section class="container">
-            <div class="columna">
-                <img src="/images/productos/remeras/remera1.1.jpg" id= "ProductImg" alt="REMERA THE NEW OLD SCHOOL - LISA" width="100%">
+            <div class="columna-images">
+                <img src="/images/productos/remeras/remera1.1.jpg" id= "ProductImg" alt="REMERA THE NEW OLD SCHOOL - LISA">
                 <div class="small-img-row">
                     <div class="small-img">
-                        <img src="/images/productos/remeras/remera1.1.jpg" alt="REMERA THE NEW OLD SCHOOL - LISA" width="100%" class="small-img">
+                        <img src="/images/productos/remeras/remera1.1.jpg" alt="REMERA THE NEW OLD SCHOOL - LISA"  class="small-img">
                     </div>
                     <div class="small-img">
-                        <img src="/images/productos/remeras/remera1.2.jpg" alt="REMERA THE NEW OLD SCHOOL - LISA" width="100%" class="small-img">
+                        <img src="/images/productos/remeras/remera1.2.jpg" alt="REMERA THE NEW OLD SCHOOL - LISA" class="small-img">
                     </div>
                     <div class="small-img">
-                        <img src="/images/productos/remeras/remera1.3.jpg" alt="REMERA THE NEW OLD SCHOOL - LISA" width="100%" class="small-img">
+                        <img src="/images/productos/remeras/remera1.3.jpg" alt="REMERA THE NEW OLD SCHOOL - LISA"  class="small-img">
                     </div>
                     <div class="small-img">
-                        <img src="/images/productos/remeras/remera1.3.jpg" alt="REMERA THE NEW OLD SCHOOL -LISA" width="100%" class="small-img">
+                        <img src="/images/productos/remeras/remera1.3.jpg" alt="REMERA THE NEW OLD SCHOOL -LISA"  class="small-img">
                     </div>
                 </div>
             </div>
-            <div class="columna">
-                <h2>T-shirts</h2>
-                <h2> $precio</h2>
-                <form action="/" method="post">
+            <div class="columna-desc">
+                <h2 class=product-name>REMERA THE NEW OLD SCHOOL - LISA</h2><h2 class=product-price> $1200</h2>
+                
+                <form action="/" method="GET">
                     <div class="elec-talle-color">
                         <div class="elec-talle">
                         <label for="prod-talle">Talle:</label>
@@ -105,7 +104,7 @@
                     <div class="cant-elec">
                         <label for="cantidad">Cantidad:</label>
                         <div class="button-cant-elec">
-                        <input class="menos" type="button" value= "-"><input class="cant-prod" type="number" placeholder="1"><input class ="mas" type="button" value="+">
+                            <div class="cant-elec"><button class ="menos" type="submit" value><i class="fas fa-minus"></i></button><p class="cantidad">1</p><button class ="mas" type="submit" value><i class="fas fa-plus"></i></button></div>
                         </div>
                     </div>
                         <button type="submit">Agregar al carrito</button>
@@ -114,64 +113,86 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia culpa aliquam perspiciatis eaque quibusdam, hic distinctio error perferendis doloribus ab, nisi deserunt velit minima enim. Officiis laboriosam vero ullam autem?</p>
             </div>
     </section>
+
+    <h3>TAMBIEN TE PUEDE INTERESAR</h3>
+    <section class="sec-carrousel">
+        <i class="fas fa-arrow-left"></i>
+        <article class="product">
+                <img class= "img-more" src="/images/productos/remeras/remera2.1.jpg" alt="REMERA THE NEW OLD SCHOOL - CANALLA N1">
+                <div class="product-description">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p class="p-name">REMERA THE OLD SCHOOL <br> CANALLA N1</p>
+                    <p class="p-price">$2.750</p>
+                    <p class="p-descuentos">20% off</p>
+                    <a href="#"><button class="ver-btn">VER</button></a>
+                </div>
+            </article>
+            
+            <article class="product">
+                <img class= "img-more" src="/images/productos/remeras/remera3.1.jpg" alt="REMERA THE OLD SCHOOL CANALLA N4">
+                <div class="product-description">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p class="p-name">REMERA THE OLD SCHOOL <br> CANALLA N4</p>
+                    <p class="p-price">$2.750</p>
+                    <p class="descuentos">20% off</p>
+                    
+                    <a href="#"><button class="ver-btn">VER</button></a>
+                </div>
+            </article>
+
+            <article class="product">
+                <img class= "img-more" src="/images/productos/remeras/remera4.1.jpg" alt="REMERA THE OLD SCHOOL - CANALLA N6">
+                <div class="product-description">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p class="p-name">REMERA THE OLD SCHOOL <br> CANALLA N6</p>
+                    <p class="p-price">$2.750</p>
+                    <p class="descuentos">20% off</p>
+                    <a href="#"><button class="ver-btn">VER</button></a>
+                </div>
+            </article>
+
+            <article class="product">
+                <img class= "img-more" src="/images/productos/remeras/remera5.4.jpg" alt="REMERA ON">
+                <div class="product-description">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p class="p-name">REMERA ON</p>
+                    <p class="p-price">$2.750</p>
+                    <p class="descuentos">20% off</p>
+                    <a href="#"><button class="ver-btn">VER</button></a>
+                </div>
+            </article>
+        <article class="product">
+            <img src="/images/productos/accesorios/billetera-collar-azul.jpg" alt="billetera-collar-azul">
+        <div class="product-description">
+            <i class="fas fa-shopping-cart"></i>
+            <p class="p-name">nombre producto</p>
+            <p class="p-price">precio</p>
+            <p class="p-descuentos">20% off</p>
+            <a href="#"><button class="ver-btn">VER</button></a>
+        </div>
+    </article>
+
+    <article class="product">
+            <img src="/images/productos/accesorios/tapaboca-trady-blanco.jpg" alt="tapaboca-trady-blanco">
+        <div class="product-description">
+            <i class="fas fa-shopping-cart"></i>
+            <p class="p-name">nombre producto</p>
+            <p class="p-price">precio</p>
+            <p class="p-descuentos">20% off</p>
+            <a href="#"><button class="ver-btn">VER</button></a>
+        </div>
+    </article>
+        
+    <i class="fas fa-arrow-right"></i>
+    </section>
+    <section class="ver-mas">
+        <p>Ver más productos</p>
+        <button type="submit"><i class="fas fa-arrow-down"></i></button>
+    </section>
+
     </main>
 
-    <section id="featured" class="mas">
-        <div class="conteiner">
-            <h3>TAMBIÉN TE PUEDE INTERESAR</h3>
-            <hr>
-        </div>
-        <div class="row">
-            <div class="product">
-                <img class= "img-more" src="/public/images/productos/remeras/remera2.1.jpg" alt="REMERA THE NEW OLD SCHOOL - CANALLA N1">
-                <div class="p-details">
-                    <p class="p-price">$2.750</p>
-                    <p class="descuentos">20% off</p>
-                    <p class="p-name">REMERA THE NEW OLD SCHOOL <br> CANALLA N1</p>
-                    <button class="buy-btn">
-                        VER 
-                    </button>
-                </div>
-            </div>
-            
-            <div class="product">
-                <img class= "img-more" src="/public/images/productos/remeras/remera3.1.jpg" alt="REMERA THE OLD SCHOOL CANALLA N4">
-                <div class="p-details">
-                    <p class="p-price">$2.750</p>
-                    <p class="descuentos">20% off</p>
-                    <p class="p-name">REMERA THE OLD SCHOOL <br> CANALLA N4</p>
-                    <button class="buy-btn">
-                        VER 
-                    </button>
-                </div>
-            </div>
-
-            <div class="product">
-                <img class= "img-more" src="/public/images/productos/remeras/remera4.1.jpg" alt="REMERA THE OLD SCHOOL - CANALLA N6">
-                <div class="p-details">
-                    <p class="p-price">$2.750</p>
-                    <p class="descuentos">20% off</p>
-                    <p class="p-name">REMERA THE OLD SCHOOL <br> CANALLA N6</p>
-                    <button class="buy-btn">
-                        VER 
-                    </button>
-                </div>
-            </div>
-
-            <div class="product">
-                <img class= "img-more" src="/public/images/productos/remeras/remera5.4.jpg" alt="REMERA ON">
-                <div class="p-details">
-                    <p class="p-price">$2.750</p>
-                    <p class="descuentos">20% off</p>
-                    <p class="p-name">REMERA ON</p>
-                    <button class="buy-btn">
-                        VER 
-                    </button>
-                </div>
-            </div>
-        </div>
-        
-    </section>
+    
 
     <footer>
         <div class="futer">
