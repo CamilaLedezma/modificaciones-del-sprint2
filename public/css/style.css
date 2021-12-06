@@ -539,11 +539,15 @@ main.register section.forms,
 main.login section.forms{
     display: flex;
     flex-wrap: nowrap;
-    background-image: linear-gradient(to right ,#ff523b,rgba(0, 0, 0, 0.9));
     padding: 10px;
     justify-content: center;
     color: white;
     font-weight: bolder;
+}
+main.register section.forms form,
+main.login section.forms form{
+    width: 100%;
+    background-image: linear-gradient(to right ,#ff523b,rgba(0, 0, 0, 0.9));
 }
 main.register section.forms div,
 main.login section.forms div{
@@ -596,7 +600,8 @@ main.login section.forms .submit button{
     width: 100%;
     border-radius: 15px;
 }
-main.register section.forms .carrousel{
+main.register section.forms .carrousel,
+main.login section.forms .carrousel{
     display: none;
 }
 main.register input,
@@ -1038,7 +1043,8 @@ footer section.copy-right{
         text-align: center;
         width: 60%;
     }
-    main.register section.forms .carrousel{
+    main.register section.forms .carrousel,
+    main.login section.forms .carrousel{
         display: flex;
         width: 60%;
         align-items: center;
